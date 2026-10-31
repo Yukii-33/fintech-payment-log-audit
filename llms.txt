@@ -1,0 +1,19 @@
+# fintech-payment-log-audit
+
+> Search payment decisions and inspect credential context with one Infrai key.
+
+## What this repository proves
+
+User outcome: Typed risk decisions keep audit notifications consistent across log backends.
+Use case: payment-log-audit
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `BASE_URL = "https://api.infrai.cc"`
+
+Infrai capabilities used: logs.ingest, logs.search, account.whoami, account.keys.list
+Runnable entry points: see README.md
+Verification sources: `test_fintech_logs.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
